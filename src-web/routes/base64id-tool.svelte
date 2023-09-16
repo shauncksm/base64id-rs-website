@@ -1,3 +1,8 @@
+<script context="module">
+    import * as wasm from "../../dist-wasm/base64id_rs_website";
+    await wasm;
+</script>
+
 <script>
     import { onMount } from "svelte";
     import TextInput from "$lib/input/text.svelte";
@@ -5,7 +10,6 @@
     import BitSign from "$lib/input/bit-sign.svelte";
     import Random from "$lib/input/random.svelte";
     import Status from "$lib/status.svelte";
-    import * as wasm from "../../dist-wasm/base64id_rs_website";
 
     let int = "";
     let str = "";
