@@ -1,0 +1,26 @@
+{
+  "name": "base64id-rs-website",
+  "version": "1.0.0-alpha",
+  "scripts": {
+    "build-wasm": "wasm-pack build --target bundler --out-dir ./dist-wasm --release && npm i",
+    "dev": "vite dev",
+    "build": "npm run build-wasm && vite build && rm -f dist.zip && cd dist && zip -r ../dist.zip .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "base64id-rs-website": "./dist-wasm"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^2.0.0",
+    "@sveltejs/kit": "^1.5.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "svelte": "^3.55.1",
+    "svelte-preprocess": "^5.0.1",
+    "tailwindcss": "^3.2.4",
+    "vite": "^4.0.0",
+    "vite-plugin-top-level-await": "^1.2.4",
+    "vite-plugin-wasm": "^3.2.1"
+  },
+  "type": "module"
+}

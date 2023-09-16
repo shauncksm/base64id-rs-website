@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+article a {
+    @apply underline hover:text-green-700 active:text-inherit;
+}

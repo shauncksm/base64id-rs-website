@@ -1,0 +1,9 @@
+{
+    "[html][scss][javascript][rust][svelte]": {
+        "editor.formatOnSave": true
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "prettier.tabWidth": 4,
+}
